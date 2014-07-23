@@ -28,6 +28,13 @@ Le script d'agrégation requiert au minimum deux paramètres: ll'objectif à attein
 
 Exemple d'exécution du script:
 
-     ruby -r rubygems script.rb 1000 #tiger #wolf #raptor
+     ruby -r rubygems script.rb 1000 '#tiger' '#wolf' '#raptor'
  
+ Vous donnera trois fichier et un résultat semblable à ceci: 
  
+    $ 100% de l'objectif trouvees. Total de 1000 tweets.
+    $ Fichier enregistre : #tiger-1000.json, 3804213 bytes
+    $ 110% de l'objectif trouvees. Total de 1098 tweets.
+    $ Fichier enregistre : #wolf-1098.json, 4472443 bytes
+    $ 110% de l'objectif trouvees. Total de 1096 tweets.
+    $ Fichier enregistre : #raptor-1096.json, 5711552 bytes
