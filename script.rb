@@ -1,8 +1,14 @@
-require 'Twitter'
+#!/usr/bin/env ruby
+$stdout.sync = true
+require 'twitter'
+
+def is_number?(obj)
+    obj.to_s == obj.to_i.to_s
+end
 
 @client = Twitter::REST::Client.new do |config|
-  config.consumer_key = 'J4ATZUUIiRMZhuxhnOp2uC3ge'
-  config.consumer_secret = 'kR49QgidxoNO27ojzfVP17irWzER6EgTOQtAHWDFxAyjtUNSBG'
+  config.consumer_key = ENV['TWITTER_CONSUMER_KEY']
+  config.consumer_secret = ENV['TWITTER_CONSUMER_SECRET']
 end
 
 def run_searches(list, goal)
@@ -48,3 +54,22 @@ def save_file(filename, json_file)
   puts "Fichier enregistre : #{filename}, #{File.size(filename)} bytes"
   true
 end
+
+def check_args(args)
+  if args.count <= 1
+    raise "Invalid number of arguments (2 or more, got #{ARGV.count})"
+  end
+    
+  unless is_number? args.first
+    raise "Target is not a number."
+  end
+end
+
+check_args(ARGV)
+
+goal = ARGV.shift.to_i
+list = ARGV
+
+
+run_searches(list, goal)
+    
