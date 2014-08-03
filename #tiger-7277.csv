@@ -1,5 +1,1 @@
-id,lang,created_at,source,in_reply_to_status_id,in_reply_to_user_id,in_reply_to_screen_name,user_id,user_location,user_followers_count,user_friends_count,"user_time_zone,","user_statuses_count,","user_lang,","place_full_name,","place_country_code,","geo_x,","geo_y,",is_good
-495969234053120000,en,Sun Aug 03 16:27:34 +0000 2014,"<a href=""http://www.grabinbox.com"" rel=""nofollow"">GrabInbox</a>",,,,2566775324,"Sydney, Australia",1125,1095,Sydney,57445,en,,,,,1
-495968649229131776,en,Sun Aug 03 16:25:15 +0000 2014,"<a href=""http://tapbots.com/tweetbot"" rel=""nofollow"">Tweetbot for iΟS</a>",495968066975850496,243096068,royaloakbi,22018930,Somewhere Out There,2635,2896,Eastern Time (US & Canada),9482,en,,,,,0
-495968647614300160,en,Sun Aug 03 16:25:14 +0000 2014,"<a href=""http://instagram.com"" rel=""nofollow"">Instagram</a>",,,,182577097,재중♥윤호bias.-,550,322,Buenos Aires,99672,es,,,,,1
-495968574255943680,de,Sun Aug 03 16:24:57 +0000 2014,"<a href=""http://instagram.com"" rel=""nofollow"">Instagram</a>",,,,71038970,120 Havenmeyer St brooklyn NYC,17,117,Quito,218,en,"New York, NY",US,40.712647,-73.957075,0
+id,lang,created_at,source,in_reply_to_status_id,in_reply_to_user_id,in_reply_to_screen_name,user_id,user_location,user_followers_count,user_friends_count,user_time_zone,user_statuses_count,user_lang,place_full_name,place_country_code,geo_x,geo_y,is_good
