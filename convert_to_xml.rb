@@ -8,8 +8,8 @@ def get_json_from_file(filename)
 end
 
 def convert_to_xml(filename)
-  tweets = get_json_from_file(filename + '.json')
-  file = File.new(filename + '.xml', "wb")
+  tweets = get_json_from_file(filename)
+  file = File.new(File.basename(filename, '.*') + '.xml', "wb")
   xml = Builder::XmlMarkup.new( :indent => 2, :target => file )
   xml.instruct! :xml, :encoding => "utf-8"
   xml.searchresult do |d|
@@ -29,3 +29,6 @@ def convert_to_xml(filename)
   file.close
   true
 end
+
+filename = ARGV[0]
+convert_to_xml filename
